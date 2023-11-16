@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class IncredibleCalculator {
 
     public static void main(String[] args) {
-
+         double num1=1;
+             double num=1;
+             double total;
         System.out.println("Selecciona la operación que prefieras realizar: ");
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
@@ -13,18 +15,40 @@ public class IncredibleCalculator {
 
         int opcion = leerEnteroEntrada();
 
-
         switch (opcion) {
-            case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
-                    break;
+            case 1: // Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
+             //declaro variables num1  num2 y total para hacer la suma y la imprimo
+            
+             total=num1+num2;
+            System.out.println(total);
+                break;
             case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
+            
+                total=(num1-num2);
+                System.out.println(total);
+            break;
+            case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su
+                    // producto.
+                    total=(num1/num2);
+                    System.out.println(total);
+
                     break;
-            case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
-                    break;
-            case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
-                    break;
-            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
-                    break;
+            case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división
+                    // entera.
+                    total=(num1*num2);
+                    System.out.println(total);
+                break;
+            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división
+                    // con decimales.
+                    //(USO CLASE LEER )
+                    System.out.println("Diga el primer numero");
+                    num1=leer.datoint;
+                    System.out.println("Ahora el segundo");
+                    num2=leer.datoint;
+
+                    total=(num1*num2)
+                    System.out.printf("El resultado con decimales de su multiplicacion es de %.2f ",total);
+                break;
 
         }
 
